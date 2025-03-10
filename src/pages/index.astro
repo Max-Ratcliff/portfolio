@@ -33,53 +33,53 @@ const work = await Promise.all(
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
     <h4 class="animate font-semibold text-black dark:text-white">
-      Hi, I'm Nano <span class="text-xl">👋🏻</span> 
+      Hi, I'm Max! <span class="text-xl"></span> 
     </h4>
     <div class="space-y-16">
       <section>
         <article class="space-y-4">
           <p class="animate">
-            I am a minimal, seo friendly, accessible portfolio and blog for developers. 
-            I am an even more lightweight version of my popular theme
-            <Link href="https://github.com/markhorn-dev/astro-sphere" aria-label="Astro Sphere on Github" external>
-              Astro Sphere
-            </Link>.
-            I have a lighthouse scores of 100 across the board for performance, 
-            accesibility, best practices and SEO.
+            I am an Applied Mathematics and Computer Science student at UC Santa Cruz with a strong foundation in scientific computing, 
+            machine learning, and software engineering. My technical expertise is mostly in C, C++ and Python but also includes 
+            Java, MATLAB, Fortran 90, and RISCV, as well as experience with ML frameworks such as PyTorch, and JAX.
+            while I also have some experience in web development,
+            my interests lay in leveraging computational mathematics, high performance computing, and AI to solve real-world problems.
+          <p class="animate">
+            Currently, I am a Resident Assistant, where I mentor students through their freshman year of college, 
+            A research assistant under Dr Julie Simons, where I where I conduct research on how AI-powered learning tools can improve 
+            knowledge gaps in foundational calculus education. 
+            And, a SciAI Scholar at Cornell's SciAI center, working on applying ML techniques in scientific computing.
+          </p>
           </p>
           <p class="animate">
-            I come packed with full type safety, a sitemap, an rss feed, markdown 
-            and mdx support (use components in your markdown) through astro integrations.
-            I am styled with tailwind and come preconfigured with light, dark and 
-            system/os theme preferences out of the box.
-          </p>
-          <p class="animate">
-            Visit
-            <Link href="https://github.com/markhorn-dev/astro-nano" aria-label="Astro Nano on Github" external>
-              Astro Nano on Github
+            My current project is an AI-driven scheduling tool, and this website ☺️.
+            Please Check out my work on:
+            <Link href="https://github.com/max-ratcliff" aria-label="Github" external>
+              Github
             </Link>
-            to fork the repository, read the docs or one-click deploy on Vercel or Netlify. 
           </p>
         </article>
       </section>
 
-      <section class="animate space-y-6">
-        <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">
-            Latest posts
-          </h5>
-          <Link href="/blog">
-            See all posts
-          </Link>
-        </div>
-        <ul class="flex flex-col gap-4">
-          {blog.map(post => (
-            <li>
-              <ArrowCard entry={post} />
-            </li>
-          ))}
-        </ul>
-      </section>
+      {SITE.NUM_POSTS_ON_HOMEPAGE > 0 && (
+        <section class="animate space-y-6">
+          <div class="flex flex-wrap gap-y-2 items-center justify-between">
+            <h5 class="font-semibold text-black dark:text-white">
+              Latest posts
+            </h5>
+            <Link href="/blog">
+              See all posts
+            </Link>
+          </div>
+          <ul class="flex flex-col gap-4">
+            {blog.map(post => (
+              <li>
+                <ArrowCard entry={post} />
+              </li>
+            ))}
+          </ul>
+        </section>)
+      }
 
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
