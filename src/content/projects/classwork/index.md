@@ -6,7 +6,7 @@ demoURL: ""
 repoURL: "https://github.com/max-ratcliff/Classes"
 ---
 
-All of my small projects and projects completed as assignments are archived and sorted in this repository. The projects are organized by quarter and class. Each class currently includes a short README blurb but I'll summarize them all here:
+All of my small projects and completed assignments are archived and sorted in this repository. The projects are organized by quarter and class. Each class currently includes a short README blurb but I'll summarize them all here:
 
 ## Fall 2023
 
