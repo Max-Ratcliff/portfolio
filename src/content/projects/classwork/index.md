@@ -70,7 +70,7 @@ More Vector Calculus, Complex Analysis, and Fourier Analysis.
 
 ### AM 198F (no projects)
 
-Independent study with Dr Marcella Gomez on ML for undergraduate research
+Independent study with Dr Marcella Gomez on ML fundamentals for undergraduate research
 
 ## Winter 2025
 
@@ -88,18 +88,32 @@ Intro to Scientific Machine Learning, learned about machine learning principles 
 
 ### AM 198F (no projects yet)
 
-Independent study with Dr Marcella Gomez on ML for undergraduate research
+Independent study with Dr Marcella Gomez on ML fundamentals for undergraduate research
 
 ## Spring 2025
 
-### CSE 130 (IP)
+### CSE 130
 
 Principles of Computer Systems Design, learning about computer systems design, including operating systems, networking, and distributed systems. Currently building a multithreaded HTTP server in C
 
-### CSE 107 (IP)
+### CSE 107 (no projects)
 
 Intro to Statistics and Probability, learning about probability theory, random variables, and statistical inference.
 
-### AM 198F (IP)
+### AM 198F
 
-Independent study with Dr Marcella Gomez on ML for undergraduate research, currently working on a classifier model to automate data extraction from images of germinating bacteria
+Independent study with Dr Marcella Gomez on ML fundamentals for undergraduate research, currently working on a data extraction pipeline that leverages computer vision to automate data extraction from images of germinating bacteria, and feeds cleaned data into an LSTM model to predict next frame germination patterns.
+
+## Fall 2025
+
+### AM114 (IP)
+
+Intro to discrete dynamical systems, learning about chaos, limit cycles, and bifurcations.
+
+### CSE140 (IP)
+
+Intro to machine learning, learning about search and pathfinding algorithms and basic ML algorithms.
+
+### PHYS5C (IP)
+
+Intro to electricity and magnetism.

@@ -4,8 +4,8 @@ export const SITE: Site = {
   NAME: "Max Ratcliff",
   EMAIL: "max@ratcliff.cc",
   NUM_POSTS_ON_HOMEPAGE: 0,
-  NUM_WORKS_ON_HOMEPAGE: 4,
-  NUM_PROJECTS_ON_HOMEPAGE: 2,
+  NUM_WORKS_ON_HOMEPAGE: 5,
+  NUM_PROJECTS_ON_HOMEPAGE: 5,
 };
 
 export const HOME: Metadata = {
