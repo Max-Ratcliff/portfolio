@@ -1,7 +1,7 @@
 ---
 title: "PieFi Platform"
 description: "An All-in-one start up accelerator platform for founders"
-date: "April 13 2025"
+date: "September 1 2025"
 demoURL: ""
 repoURL: ""
 ---

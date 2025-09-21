@@ -1,7 +1,7 @@
 ---
 title: "ARO Lab Data Pipeline"
 description: "A Customized automated data extraction and prediction pipeline for bacterial germination research"
-date: "April 13 2025"
+date: "May 30 2025"
 demoURL: "https://github.com/Max-Ratcliff/AroProject"
 repoURL: "https://github.com/Max-Ratcliff/AroProject"
 ---
