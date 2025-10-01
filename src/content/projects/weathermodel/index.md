@@ -3,7 +3,7 @@ title: "Conv VAE Weather Model"
 description: "Denoising and Autoregressive Conv VAE models for Weather Forecasting"
 date: "March 21 2025"
 demoURL: ""
-repoURL: ""
+repoURL: "https://github.com/Max-Ratcliff/Classes/tree/main/25winter/am160"
 ---
 
 This was my final project for AM160 (Scientific ML). For this project I dove into modeling complex weather patterns using real atmospheric data from 1979-1985. The first step was just getting a handle on the data itself – specifically the 'z' variable (geopotential height). After normalizing it to make it easier for my model to learn. I plotted some contour maps to visualize how weather features change across the globe and over time.
