@@ -1,7 +1,7 @@
 ---
 title: "Efficient Chess-AI"
 description: "A hybrid chess engine combining Minimax search with a ResNet-based neural evaluator, reaching an estimated 1647 ELO."
-date: "May 20 2024"
+date: "December 15 2025"
 demoURL: "https://chess.ratcliff.cc"
 repoURL: "https://github.com/abbycakes02/cmpm118_chessengine"
 ---
