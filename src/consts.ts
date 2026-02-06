@@ -4,13 +4,14 @@ export const SITE: Site = {
   NAME: "Max Ratcliff",
   EMAIL: "max@ratcliff.cc",
   NUM_POSTS_ON_HOMEPAGE: 0,
-  NUM_WORKS_ON_HOMEPAGE: 5,
-  NUM_PROJECTS_ON_HOMEPAGE: 5,
+  NUM_WORKS_ON_HOMEPAGE: 10,
+  NUM_PROJECTS_ON_HOMEPAGE: 10,
 };
 
 export const HOME: Metadata = {
   TITLE: "Home",
-  DESCRIPTION: "Max Ratcliff's portfolio website. Built on the Astro Nano theme.",
+  DESCRIPTION:
+    "Max Ratcliff's portfolio website. Built on the Astro Nano theme.",
 };
 
 export const BLOG: Metadata = {
@@ -25,16 +26,17 @@ export const WORK: Metadata = {
 
 export const PROJECTS: Metadata = {
   TITLE: "Projects",
-  DESCRIPTION: "A collection of my projects, with links to repositories and demos.",
+  DESCRIPTION:
+    "A collection of my projects, with links to repositories and demos.",
 };
 
 export const SOCIALS: Socials = [
-  { 
+  {
     NAME: "github",
-    HREF: "https://github.com/max-ratcliff/"
+    HREF: "https://github.com/max-ratcliff/",
   },
-  { 
+  {
     NAME: "linkedin",
     HREF: "https://www.linkedin.com/in/max-ratcliff/",
-  }
+  },
 ];
