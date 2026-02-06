@@ -1,7 +1,7 @@
 ---
 title: "Classwork"
-description: "collection of most class projects and assignments"
-date: "January 20 2026"
+description: "A comprehensive description of my classwork and projects from my time at UCSC"
+date: "September 20 2023"
 demoURL: ""
 repoURL: "https://github.com/max-ratcliff/Classes"
 ---
@@ -139,4 +139,3 @@ Mathematical Modeling 1. Building and solving models for real-world problems in 
 ### AM 147
 
 Computational Methods and Applications. Modeling complex natural systems using dynamical systems theory.
-
