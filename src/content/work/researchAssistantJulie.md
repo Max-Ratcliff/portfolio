@@ -1,8 +1,8 @@
 ---
 company: "University of California, Santa Cruz"
 role: "Undergraduate Research Assistant"
-dateStart: "01/01/2025"
-dateEnd: "Current"
+dateStart: "02/01/2025"
+dateEnd: "08/31/2025"
 ---
 
 Performing research under Dr. Julie Simons on knowledge gaps in foundational calculus and writing classes, and investigating how LLMs can be used to address them in an equitable way

@@ -2,7 +2,7 @@
 company: "City of Pasadena Parks and Recreation"
 role: "Senior Lifeguard and Swim instructor"
 dateStart: "06/01/2022"
-dateEnd: "09/01/2024"
+dateEnd: "09/01/2025"
 ---
 
 Previous Roles: Junior Lifeguard (summer 2020) and Lifeguard (summer 2021)
