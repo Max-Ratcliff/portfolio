@@ -6,7 +6,7 @@ demoURL: "https://chess.ratcliff.cc"
 repoURL: "https://github.com/abbycakes02/cmpm118_chessengine"
 ---
 
-![Efficient Chess AI Architecture](./ModelArchitecture.png)
+![Efficient Chess AI Architecture](./EngineArchitecture.png)
 
 This project was my final report for CMPM 118, where my team and I set out to build a practical middle ground between traditional rule-based engines like Stockfish and massive reinforcement learning systems like AlphaZero. We built a hybrid engine that pairs a lightweight ResNet-based neural network with a classical Alpha-Beta search. This allows the model to provide high-level "intuition" about a position while the search algorithm handles the tactical depth and precision.
 
@@ -23,8 +23,11 @@ To solve the performance bottleneck of running neural network inference during a
 ### Performance & Results
 In testing against various levels of Stockfish, our hybrid engine achieved an estimated ELO of **1647**. This was a significant jump over our baseline Minimax engine (1420 ELO) and completely eclipsed random play (400 ELO). 
 
-![Value Net Loss Plot](./loss_plot_value_net.png)
-![Policy Net Loss Plot](./loss_plot_policy_net.png)
+![First generation model (Value head only)](./loss_plot_value_net.png)
+*First generation of the model featuring only the value head, which was susceptible to gradient saturation and overfitting.*
+
+![Second generation model (Policy head + Cosine Regularization)](./loss_plot_policy_net.png)
+*Second generation of the model with the added policy head and a more robust training pipeline featuring cosine learning rate scheduling.*
 
 One of the biggest challenges was training. We initially tried training on an M2 Mac, but it was taking over 10 hours per epoch. Moving to an A100 via Colab Pro brought this down to 3 hours, allowing us to implement Cosine Learning Rate scheduling and gradient clipping, which fixed our early issues with gradient saturation and overfitting.
 
