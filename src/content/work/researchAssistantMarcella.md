@@ -1,8 +1,11 @@
 ---
-company: "University of California, Santa Cruz"
-role: "Undergraduate Research Assistant"
+company: "University of California, Santa Cruz (ARO Lab)"
+role: "SciAI Pathways Scholar"
 dateStart: "06/01/2024"
 dateEnd: "Current"
 ---
 
-Performing research under Dr. Marcella Gomez, we are studying bacterial germination with the goal of applying control theory to bacterial populations. I am currently working on a data extraction pipeline that leverages the cellpose computer vision model to automate data extraction from microscopy images of germinating bacteria, and feeds cleaned data of the cell characteristics into an LSTM model to predict next frame germination patterns. This project involves image processing, data cleaning, and time series prediction using machine learning techniques. My pipeline is written in Python and the code is available on my GitHub.
+Performing research under Dr. Marcella Gomez on automated control of synthetic biological systems.
+Engineered a fully automated data pipeline in Python using CellPose to segment and process large batches of bacterial spore microscopy images.
+Integrated the pipeline into a closed-loop control system, enabling real-time spore population prediction and automated environmental adjustments with 0.3ms processing latency per image.
+Eliminated manual image segmentation in ImageJ/Fiji, standardizing data extraction consistency and reducing processing time by over 95%.

@@ -1,15 +1,15 @@
 ---
-title: "BenifitFinder"
+title: "Benefit Finder"
 description: "A Personalized Agent for Finding Government Aid and Benefits"
-date: "April 13 2025"
+date: "Jan 19 2025"
 demoURL: "https://devpost.com/software/benefitfinder"
 repoURL: "https://github.com/ggrantrichards/cruzhackies"
 ---
 
 ![BenefitFinder example](./benefitfinder_demo.png)
 
-BenefitFinder is an AI-powered tool designed to simplify the discovery of student resources, including government aid, scholarships, discounts, and local educational initiatives. By leveraging Google's Firebase and Gemini services, BenefitFinder streamlines the often complicated process of identifying and applying for benefits.
+Developed at **CruzHacks 2025**, Benefit Finder is an AI-powered platform designed to aggregate user demographics and identify eligible government benefits using Gemini Deep Research APIs. Our team was awarded "Best Beginner Hack" for our prototype, and we have since moved into active collaboration with the **City of Santa Cruz** to pilot the tool as a public service.
 
-The backend utilizes Firebase and Gemini AI to securely manage user data and efficiently parse extensive federal, state, and local databases. The frontend, built with Typescript, provides an intuitive and user-friendly interface where students answer a brief series of questions regarding their background and circumstances. BenefitFinder then returns a tailored list of applicable resources and clear eligibility criteria before guiding you through the application process and generating a the necessary documents to apply for the benefits.
+Initially built with a Python backend, I led the effort to refactor the entire platform to a full **TypeScript** stack to improve maintainability, type safety, and integration with modern web frameworks. The current pilot focus is on data privacy compliance and the implementation of automated application-filling features to reduce the administrative burden on citizens.
 
-The project was developed during the [CruzHacks 2025 hackathon](https://devpost.com/software/benefitfinder), where we were awarded the "Best Beginner Hack" prize. My role in this project was primarily focused on backend development, where I worked closely with Firebase and Gemini to ensure seamless integration and data management.
+The platform streamlines the discovery of student resources, government aid, and local initiatives. By leveraging Google's Firebase and Gemini services, Benefit Finder eliminates the need for manual scraping, instead utilizing structured API research to find the most up-to-date eligibility criteria.
