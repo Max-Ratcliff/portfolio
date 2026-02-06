@@ -1,7 +1,7 @@
 ---
 title: "Classwork"
 description: "collection of most class projects and assignments"
-date: "September 26 2023"
+date: "January 20 2026"
 demoURL: ""
 repoURL: "https://github.com/max-ratcliff/Classes"
 ---
@@ -102,18 +102,41 @@ Intro to Statistics and Probability, learning about probability theory, random v
 
 ### AM 198F
 
-Independent study with Dr Marcella Gomez on ML fundamentals for undergraduate research, currently working on a data extraction pipeline that leverages computer vision to automate data extraction from images of germinating bacteria, and feeds cleaned data into an LSTM model to predict next frame germination patterns.
+Independent study with Dr Marcella Gomez on ML fundamentals. In following quarters, I dropped the formal course due to credit limit requirements but am continuing to work with the lab.
 
 ## Fall 2025
 
-### AM114 (IP)
+### AM114 (no projects)
 
-Intro to discrete dynamical systems, learning about chaos, limit cycles, and bifurcations.
+Study of discrete dynamical systems, including chaos, limit cycles, and bifurcations.
 
-### CSE140 (IP)
+### CSE140
 
-Intro to machine learning, learning about search and pathfinding algorithms and basic ML algorithms.
+Introduction to Artificial Intelligence. Focused on search algorithms and basic ML principles. (projects pushed to git soon)
 
-### PHYS5C (IP)
+### CMPM 118
+
+Intro to Undergraduate Research in Artificial Intelligence. Developed an end-to-end [hybrid neural network chess engine](/projects/chessbot) using Minimax search and a ResNet-based evaluator.
+
+### PHYS5C (no projects)
 
 Intro to electricity and magnetism.
+
+## Winter 2026
+
+### CMPM 118-02
+
+Undergraduate Research in AI. Currently developing the [Neuromorphic Computing Research (JEPA)](/projects/jepa-research) project, focusing on distilling latent predictive dynamics from Transformers into spiking neural networks.
+
+### CSE 120
+
+Computer Architecture. Study of the hardware-software interface, focusing on CPU design, pipelining, and memory hierarchy.
+
+### AM 170A
+
+Mathematical Modeling 1. Building and solving models for real-world problems in physics, biology, and engineering using Matlab.
+
+### AM 147
+
+Computational Methods and Applications. Modeling complex natural systems using dynamical systems theory.
+
