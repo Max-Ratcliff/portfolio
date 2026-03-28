@@ -40,7 +40,7 @@ While 1647 ELO is a solid intermediate level, the "horizon effect" still occasio
 
 ### Technical Report
 
-For a deeper dive into the mathematics and experimental setup, you can read our [Final LaTeX Report](./CMPM_118__Final_Project.pdf).
+For a deeper dive into the mathematics and experimental setup, you can read our [Final LaTeX Report](/public/projects/chessbot/CMPM_118__Final_Project.pdf).
 
 ### Credits
 

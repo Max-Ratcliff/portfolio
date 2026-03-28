@@ -8,19 +8,20 @@ type Props = {
 const { entry } = Astro.props;
 ---
 
-<a href={`/${entry.collection}/${entry.slug}`} class="relative group flex flex-nowrap py-3 px-4 pr-10 rounded-lg border border-black/15 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5 hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
-  <div class="flex flex-col flex-1 truncate">
-    <div class="font-semibold">
+<a href={`/${entry.collection}/${entry.slug}`} class="relative group flex flex-nowrap py-4 px-5 pr-10 rounded-xl border border-white/10 bg-white/5 backdrop-blur-md hover:bg-white/10 hover:border-white/30 hover:text-indigo-400 text-zinc-300 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(79,70,229,0.15)] overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-r from-indigo-500/0 via-indigo-500/0 to-indigo-500/0 group-hover:via-indigo-500/10 transition-colors duration-500 ease-in-out"></div>
+  <div class="flex flex-col flex-1 truncate relative z-10">
+    <div class="font-semibold text-zinc-100 group-hover:text-white transition-colors">
       {entry.data.title}
     </div>
-    <div class="text-sm">
+    <div class="text-sm text-zinc-400 group-hover:text-zinc-300 transition-colors mt-1">
       {entry.data.description}
     </div>
   </div>
   <svg 
     xmlns="http://www.w3.org/2000/svg" 
     viewBox="0 0 24 24"
-    class="absolute top-1/2 right-2 -translate-y-1/2 size-5 stroke-2 fill-none stroke-current">
+    class="absolute top-1/2 right-4 -translate-y-1/2 size-5 stroke-2 fill-none stroke-current opacity-50 group-hover:opacity-100 transition-opacity duration-300">
     <line x1="5" y1="12" x2="19" y2="12" class="translate-x-3 group-hover:translate-x-0 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out" />
     <polyline points="12 5 19 12 12 19" class="-translate-x-1 group-hover:translate-x-0 transition-transform duration-300 ease-in-out" />
   </svg>

@@ -8,139 +8,160 @@ import { dateRange } from "@lib/utils";
 import { SITE, HOME, SOCIALS } from "@consts";
 
 const blog = (await getCollection("blog"))
-  .filter(post => !post.data.draft)
+  .filter((post) => !post.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0,SITE.NUM_POSTS_ON_HOMEPAGE);
+  .slice(0, SITE.NUM_POSTS_ON_HOMEPAGE);
 
 const projects = (await getCollection("projects"))
-  .filter(project => !project.data.draft)
+  .filter((project) => !project.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0,SITE.NUM_PROJECTS_ON_HOMEPAGE);
+  .slice(0, SITE.NUM_PROJECTS_ON_HOMEPAGE);
 
 const allwork = (await getCollection("work"))
-  .sort((a, b) => new Date(b.data.dateStart).valueOf() - new Date(a.data.dateStart).valueOf())
-  .slice(0,SITE.NUM_WORKS_ON_HOMEPAGE);
+  .sort(
+    (a, b) =>
+      new Date(b.data.dateStart).valueOf() -
+      new Date(a.data.dateStart).valueOf(),
+  )
+  .slice(0, SITE.NUM_WORKS_ON_HOMEPAGE);
 
 const work = await Promise.all(
   allwork.map(async (item) => {
     const { Content } = await item.render();
     return { ...item, Content };
-  })
+  }),
 );
-
 ---
 
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
-    <h4 class="animate font-semibold text-black dark:text-white">
-      Hi, I'm Max! <span class="text-xl"></span> 
+    <h4
+      class="animate font-bold text-4xl mb-6 text-white drop-shadow-[0_0_12px_rgba(255,255,255,0.25)]"
+    >
+      Hi, I'm Max! <span class="text-xl"></span>
     </h4>
     <div class="space-y-16">
       <section>
         <article class="space-y-4">
           <p class="animate">
-          I am an Applied Mathematics and Computer Engineering (Systems Concentration) double major at UC Santa Cruz. In addition to being a native German speaker, my technical expertise is primarily in Python, C, and C++, with a strong foundation in scientific computing, machine learning, and high-performance computing.
+            I am a third year Applied Mathematics and Computer Engineering
+            (Systems Concentration) double major at UC Santa Cruz. In addition
+            to being a native German speaker, my technical expertise is
+            primarily in Python, C, and C++, with a strong foundation in
+            scientific computing, machine learning, and high-performance
+            computing.
           </p>
           <p class="animate">
-            Currently, I am an <strong>Undergraduate Researcher</strong> in Neuromorphic Computing, working to align Spiking Neural Networks with biological manifolds using JEPA. I also serve as a <strong>SciAI Pathways Scholar</strong> under Dr. Marcella Gomez and a <strong>Resident Assistant</strong> mentoring 60 students.
+            Currently, I am an Undergraduate Researcher in <strong
+              >Neuromorphic Computing</strong
+            >, working to align Spiking Neural Networks with biological
+            manifolds using JEPA. I am also a SciAI Pathways Scholar in Dr.
+            Marcella Gomez's lab studying <strong
+              >Bioelectric Control Systems</strong
+            > as well as a <strong>Resident Assistant</strong>.
           </p>
           <p class="animate">
-            Beyond research and academics, I spend my time maintaining <strong>Calendarize</strong>, cooking, and bike riding. Please check out my work on:
-            <Link href="https://github.com/max-ratcliff" aria-label="Github" external>
+            Beyond research and academics, I spend my time cooking, hiking, and
+            maintaining some open source projects. Please check out my work on:
+            <Link
+              href="https://github.com/max-ratcliff"
+              aria-label="Github"
+              external
+            >
               Github
             </Link>
+            or explore my projects here!
           </p>
         </article>
       </section>
 
-      {SITE.NUM_POSTS_ON_HOMEPAGE > 0 && (
-        <section class="animate space-y-6">
-          <div class="flex flex-wrap gap-y-2 items-center justify-between">
-            <h5 class="font-semibold text-black dark:text-white">
-              Latest posts
-            </h5>
-            <Link href="/blog">
-              See all posts
-            </Link>
-          </div>
-          <ul class="flex flex-col gap-4">
-            {blog.map(post => (
-              <li>
-                <ArrowCard entry={post} />
-              </li>
-            ))}
-          </ul>
-        </section>)
+      {
+        SITE.NUM_POSTS_ON_HOMEPAGE > 0 && (
+          <section class="animate space-y-6">
+            <div class="flex flex-wrap gap-y-2 items-center justify-between">
+              <h5 class="font-semibold text-zinc-100">Latest posts</h5>
+              <Link href="/blog">See all posts</Link>
+            </div>
+            <ul class="flex flex-col gap-4">
+              {blog.map((post) => (
+                <li>
+                  <ArrowCard entry={post} />
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
       }
 
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">
-            Work Experience
-          </h5>
-          <Link href="/work">
-            See all work
-          </Link>
+          <h5 class="font-semibold text-zinc-100">Work Experience</h5>
+          <Link href="/work"> See all work </Link>
         </div>
         <ul class="flex flex-col space-y-4">
-          {work.map(entry => (
-            <li>
-              <div class="text-sm opacity-75">
-                {dateRange(entry.data.dateStart, entry.data.dateEnd)}
-              </div>
-              <div class="font-semibold text-black dark:text-white">
-                {entry.data.company}
-              </div>
-              <div class="text-sm opacity-75">
-                {entry.data.role}
-              </div>
-              <article>
-                <entry.Content />
-              </article>
-            </li>
-          ))}
+          {
+            work.map((entry) => (
+              <li>
+                <div class="text-sm opacity-75">
+                  {dateRange(entry.data.dateStart, entry.data.dateEnd)}
+                </div>
+                <div class="font-semibold text-zinc-100">
+                  {entry.data.company}
+                </div>
+                <div class="text-sm opacity-75">{entry.data.role}</div>
+                <article>
+                  <entry.Content />
+                </article>
+              </li>
+            ))
+          }
         </ul>
       </section>
 
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">
-            Recent projects
-          </h5>
-          <Link href="/projects">
-            See all projects
-          </Link>
+          <h5 class="font-semibold text-zinc-100">Recent projects</h5>
+          <Link href="/projects"> See all projects </Link>
         </div>
         <ul class="flex flex-col gap-4">
-          {projects.map(project => (
-            <li>
-              <ArrowCard entry={project} />
-            </li>
-          ))}
+          {
+            projects.map((project) => (
+              <li>
+                <ArrowCard entry={project} />
+              </li>
+            ))
+          }
         </ul>
       </section>
 
       <section class="animate space-y-4">
-        <h5 class="font-semibold text-black dark:text-white">
-          Let's Connect
-        </h5>
+        <h5 class="font-semibold text-zinc-100">Let's Connect</h5>
         <article>
           <p>
-            If you want to get in touch with me about something or just to say hi,
-            reach out on social media or send me an email.
+            If you want to get in touch with me about something or just to say
+            hi, reach out on social media or send me an email.
           </p>
         </article>
         <ul class="flex flex-wrap gap-2">
-          {SOCIALS.map(SOCIAL => (
-            <li class="flex gap-x-2 text-nowrap">
-              <Link href={SOCIAL.HREF} external aria-label={`${SITE.NAME} on ${SOCIAL.NAME}`}>
-                {SOCIAL.NAME}
-              </Link>
-              {"/"}
-            </li>
-          ))}
+          {
+            SOCIALS.map((SOCIAL) => (
+              <li class="flex gap-x-2 text-nowrap">
+                <Link
+                  href={SOCIAL.HREF}
+                  external
+                  aria-label={`${SITE.NAME} on ${SOCIAL.NAME}`}
+                >
+                  {SOCIAL.NAME}
+                </Link>
+                {"/"}
+              </li>
+            ))
+          }
           <li class="line-clamp-1">
-            <Link href={`mailto:${SITE.EMAIL}`} aria-label={`Email ${SITE.NAME}`}>
+            <Link
+              href={`mailto:${SITE.EMAIL}`}
+              aria-label={`Email ${SITE.NAME}`}
+            >
               {SITE.EMAIL}
             </Link>
           </li>
