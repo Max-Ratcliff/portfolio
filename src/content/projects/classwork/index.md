@@ -13,8 +13,8 @@ All of my small projects and completed assignments are archived and sorted in th
 ### CSE 100 (IP)
 Logic design, intro to verilog
 
-### AM 170B (IP)
-Last applied math class ;-; research project based class around math modeling
+### AM 170B
+Research-project-based mathematical modeling course. My team built [MEDIDA for Epidemiology](/projects/medida-epidemiology), applying interpretable model-error discovery to synthetic epidemic models and historical COVID-19 data.
 
 ### CSE 150 (IP)
 Intro to computer networks

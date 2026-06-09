@@ -6,7 +6,7 @@ demoURL: ""
 repoURL: ""
 ---
 
-This research project explores a novel approach to understanding neural population codes, which often change dramatically across brain states (active vs. passive), causing traditional decoders to fail. My team and I proposed a solution using **Joint-Embedding Predictive Architectures (JEPA)** to discover "ground truth" latent dynamics from real neural recordings while filtering out noise. We then test whether biologically-constrained **Spiking Neural Networks (SNNs)** can implement these same computations.
+This research project explored a novel approach to understanding neural population codes, which often change dramatically across brain states (active vs. passive), causing traditional decoders to fail. My team and I proposed a solution using **Joint-Embedding Predictive Architectures (JEPA)** to discover "ground truth" latent dynamics from real neural recordings while filtering out noise. We then tested whether biologically-constrained **Spiking Neural Networks (SNNs)** could implement these same computations.
 
 ### The Research Problem
 
@@ -14,7 +14,7 @@ A major challenge in neuroscience is that we don't fully understand the underlyi
 
 ### Methodology: A Two-Phase Approach
 
-Our approach, which we are currently implementing using the **Allen Institute Neuropixels Visual Behavior** dataset (200,000 neurons), is divided into two main phases:
+Our approach, implemented around the **Allen Institute Neuropixels Visual Behavior** dataset, was divided into two main phases:
 
 1.  **Teacher Model (Phase 1):** We train a **LeJEPA** model on binned spike data (10ms) to predict future latent states. This allows the model to discover the essential latent dynamics of the mouse visual cortex without representational collapse.
 2.  **Student Model (Phase 2):** We "distill" these learned dynamics into a bio-constrained SNN. Using **snntorch** and **Leaky Integrate-and-Fire (LIF)** neurons, we match the teacher's latent representations via **Rotationally-invariant Canonical Correlation Analysis (CCA)**.
@@ -31,7 +31,7 @@ We define success by achieving a CCA similarity of >0.7 between the SNN and JEPA
 
 ### Current Status
 
-We have successfully completed **Phase 0 (Data Pipeline & Infrastructure)**, including the implementation of spike binning and data quality validation. We are now moving into the training phase for the LeJEPA baseline, with the ultimate goal of publishing our findings over the next two quarters.
+I worked on this project during Winter 2026 and stopped at the end of that quarter. During that period, we completed **Phase 0 (Data Pipeline & Infrastructure)**, including spike binning and data quality validation, and moved toward the LeJEPA baseline training phase.
 
 ### Credits
 
