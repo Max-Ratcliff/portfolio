@@ -6,7 +6,7 @@ demoURL: ""
 repoURL: ""
 ---
 
-![Global transfer map for MEDIDA correction](./global_map.png)
+![Global accuracy gain from a globally trained MEDIDA correction](./global_map.png)
 
 This was my AM 170B mathematical modeling research project with Alejandro Munoz, Alexander Spetzler, Anirudh Raja, and Matteo Tasso. We applied MEDIDA, which stands for Model Error Discovery with Interpretability and Data Assimilation, to synthetic epidemic models and historical COVID-19 data.
 
@@ -26,11 +26,15 @@ Before moving to real epidemic data, we checked whether the implementation could
 
 ### COVID Case Study
 
-The COVID analysis used a simple SIR model with constant transmission and recovery parameters as the imperfect baseline. MEDIDA then learned sparse corrections from one country and evaluated whether that correction improved one-step predictions both locally and when transferred to other countries.
+The COVID analysis used a simple SIR model with constant transmission and recovery parameters as the imperfect baseline. MEDIDA then learned sparse corrections from both individual countries and a globally aggregated training set, then evaluated whether those corrections improved one-step predictions locally, globally, and across future epidemic waves.
 
-![MEDIDA discovered correction card](./discovery_card.png)
+![Italy epidemic curve and prediction residuals](./epidemic_curve_residuals.png)
 
 The project intentionally frames these as modeling experiments rather than epidemiological forecasts. The COVID results rely on reported-case data, undercount assumptions, and a 14-day infectious window, so the value is in testing interpretable model-error recovery rather than making clinical or policy claims.
+
+### Final Report
+
+You can read the full final report here: [MEDIDA for Epidemics](/projects/medida-epidemiology/MEDIDA_for_Epidemics.pdf).
 
 ### Technical Notes
 
