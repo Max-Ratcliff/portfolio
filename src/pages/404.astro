@@ -1,0 +1,21 @@
+---
+import PageLayout from "@layouts/PageLayout.astro";
+import Container from "@components/Container.astro";
+import BackToPrev from "@components/BackToPrev.astro";
+---
+
+<PageLayout title="404: Page Not Found" description="The page you are looking for does not exist.">
+  <Container>
+    <div class="space-y-6 my-16 text-center">
+      <h1 class="animate text-6xl font-bold text-zinc-100">404</h1>
+      <p class="animate text-lg text-zinc-400">
+        Oops! The page you're looking for doesn't exist or has been moved.
+      </p>
+      <div class="animate pt-4 flex justify-center">
+        <BackToPrev href="/">
+          Back to home
+        </BackToPrev>
+      </div>
+    </div>
+  </Container>
+</PageLayout>

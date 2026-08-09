@@ -48,13 +48,12 @@ const work = await Promise.all(
             Engineering (Systems Concentration) double major at UC Santa Cruz.
             In addition to being a native German speaker, my technical expertise
             is primarily in Python, C, and C++, with a strong foundation in
-            scientific computing, machine learning, and high-performance
-            computing.
+            scientific computing, machine learning.
           </p>
           <p class="animate">
             Currently, I am a <strong>Machine Learning Intern at NASA Jet Propulsion Laboratory</strong>,
             where I am building a training dataset from Mars orbital imagery and rover navigation pictures.
-            The goal is to develop a foundational model for Mars — enabling Martian image captioning,
+            The goal is to develop a foundational model for Mars enabling Martian image captioning,
             detection of scientifically significant images, and ultimately a lightweight onboard model
             capable of autonomous image analysis under severe downlink bandwidth constraints.
           </p>
@@ -176,4 +175,26 @@ const work = await Promise.all(
       </section>
     </div>
   </Container>
+  <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Max Ratcliff",
+      "url": "https://ratcliff.cc",
+      "email": "mailto:max@ratcliff.cc",
+      "jobTitle": "Machine Learning Intern",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "NASA Jet Propulsion Laboratory"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of California, Santa Cruz"
+      },
+      "sameAs": [
+        "https://github.com/max-ratcliff",
+        "https://www.linkedin.com/in/max-ratcliff/"
+      ]
+    }
+  </script>
 </PageLayout>
